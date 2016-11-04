@@ -1,0 +1,24 @@
+<html>
+<head>
+<!--<script src ="jquery-1.11.2.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		 $("a").click(function(){
+			var clickid = $(this).attr('id');
+			$('#' + clickid).load('calculatordetail.html #' + clickid) ;
+			
+		});
+		
+	});
+		
+</script>
+</head>
+<body style = "font-family : Arial;">
+
+<h1>Auto</h1>
+<a href="#" id="auto1">Auto1</a><br/>
+<a href="#" id="auto2">Auto2</a>
+</body>
+</html>
